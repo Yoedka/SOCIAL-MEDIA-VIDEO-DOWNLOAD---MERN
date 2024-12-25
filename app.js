@@ -4,7 +4,7 @@ const requestIp = require("request-ip");
 require("dotenv").config();
 const mongoos = require("mongoose");
 const UAParser = require("ua-parser-js");
-const MONGO_CONNECT = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASS}mymongoinit.6md0cxy.mongodb.net/smvd?retryWrites=true&w=majority`;
+const MONGO_CONNECT = `mongodb+srv://intionto2:yudadika11@cluster0.x8yiv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 const PORT_NO = "3030";
 
 const app = express();
