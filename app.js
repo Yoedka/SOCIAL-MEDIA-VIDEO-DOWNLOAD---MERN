@@ -13,9 +13,9 @@ app.use(express.json());
 app.use(cros());
 app.use(requestIp.mw());
 
-const User = require("/models/user");
+const User = require("./models/user");
 
-const publicRoutes = require("/routes/public");
+const publicRoutes = require("./routes/public");
 
 app.use((req, res, next) => {
   User.findOne({ ip: req.clientIp })
